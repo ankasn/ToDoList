@@ -17,3 +17,6 @@ CSS (stylesheets with text-styles, grid, media queries)
 BEM
 JavaScript ES6
 Website preview
+
+### Short instruction
+![instruction](https://github.com/ankasn/ToDoList/blob/master/image/ToDoList.gif) 
