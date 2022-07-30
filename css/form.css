@@ -1,20 +1,17 @@
 .form {
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
-    grid-auto-rows: auto;
-    padding: 10px 20px;
 }
 
 @media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
-        grid-gap: 10px;
     }
 }
 
 .form__button {
-    display: grid;
     background-color: teal;
     border: none;
     color: white;
@@ -23,14 +20,10 @@
 
 .form__button:hover {
     background-color: rgb(2, 160, 160);
-    transform: scale(1.1);
     cursor: pointer;
-    border: 1px solid black;
 }
 
 .form__input {
-    display: grid;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     padding: 10px;
-    grid-auto-rows: auto;
 }

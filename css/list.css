@@ -1,5 +1,7 @@
 .list {
-    padding: 10px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
 }
 
 .list__item {
@@ -7,7 +9,8 @@
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px soli #ddd;
 }
 
 .list__item--done {
@@ -17,31 +20,32 @@
 .list__button {
     width: 30px;
     height: 30px;
-    border: 1px solid #eee;
-    text-align: center;
+    border: none;
     color: white;
+    padding: 0;
     cursor: pointer;
 }
 
-.list__button-green {
-    background-color: darkgreen;
+.list__button--done {
+    background-color: hsl(120, 61%, 34%);
 }
 
-.list__button-green:hover {
-    background-color: rgb(8, 144, 8);
-    transform: scale(1.1);
+.list__button--done:hover {
+    background-color:  hsl(120, 61%, 39%);
 }
 
-.list__button-green:active {
-    background-color: rgb(8, 144, 8);
-    border: 1px solid black;
+.list__button--done:active {
+    background-color:  hsl(120, 61%, 44%);
 }
 
-.list__button--red {
-    background-color: rgb(203, 6, 6);
+.list__button--remove {
+    background-color: hsl(348, 83%, 47%);
 }
 
-.list__button--red:hover {
-    background-color:  rgb(241, 79, 39);
-    box-shadow: 0px 1px 1px 1px rgb(18, 18, 18);
+.list__button--remove:hover {
+    background-color: hsl(348, 83%, 52%);
+}
+
+.list__button--remove:active {
+    background-color: hsl(348, 83%, 57%);
 }
